@@ -1,0 +1,39 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.encabezado{
+    height: 100px;
+    width: 92%;
+    padding: 30px;
+    border: 20px rgb(24, 114, 118);
+    border-style: double;
+    background-color: cadetblue;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+.descripcionProducto{
+    height: 300px;
+    width: 250px;
+    background-color: aquamarine;
+    overflow: auto;
+    margin: 50px;
+    position: relative;
+    top: 250px;
+    z-index: 1;
+}
+li{
+    display: inline-block;
+    width: 20%;
+    position: relative;
+    font-size: 30px;
+}
+li a{
+    text-decoration: none;
+}
+li a:hover{
+    color: aqua;
+}

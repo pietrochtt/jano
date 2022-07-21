@@ -1,0 +1,33 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.header{
+    height: 100px;
+    width: 100%;
+    background-color: #f45a07;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.img{
+    height: 100px;
+}
+.header nav ul{
+    list-style: none;
+    padding: 30px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.header nav ul li{
+    padding: 20px;
+}
+.header a{
+    text-decoration: none;
+    color:#124e78;
+}
+.header a:hover{
+    color: white;
+}

@@ -1,0 +1,146 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: blue;
+}
+.contenedor{
+    height: auto;
+    width: 90%;
+    background-color: blueviolet;
+    padding: 40px;
+    margin: auto;
+}
+.cuadrado{
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    border: 5px solid white;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+}
+.c1{
+    transform: translate(250px, 50px);
+}
+.c2{
+    transform: rotate(30deg);
+}
+.c3{
+    transform: rotateX(80deg);
+}
+.c4{
+    transform: rotateY(45deg);
+}
+.c5{
+    transform: rotateZ(30deg);
+}
+.c6{
+    transform: scale(1.5,1);
+}
+.c7{
+    transform: skewX(60deg);
+}
+.c8{
+    transform: skewY(20deg);
+}
+.c9{
+    transform: skew(40deg,20deg);
+}
+.transition{
+    height: 70px;
+    width: 400px;
+    background-image: linear-gradient(to left top, red, orange 80%,yellow);
+    border: 2px solid black;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px;
+    margin: 5px;
+}
+#t1{
+    transition: height 2s;
+}
+#t1:hover{
+    height: 150px;
+}
+#t2{
+    transition: height 2s, width 0.5s;
+}
+#t2:active{
+    height: 200px;
+    width: 500px;
+}
+#t3{
+    transition: all 2s;
+}
+#t3:hover{
+    height: 150px;
+    width: 600px;
+    background-color: red;
+}
+form h1{
+    text-transform: uppercase;
+    font-family: cursive;
+    color: blueviolet;
+    font-size: 70px;
+
+    animation-name: aparecer;
+    animation-duration: 0.7s;
+    animation-delay:3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+input{
+    transition: all 1.5s;
+}
+input:focus{
+    font-size: 40px;
+    color: blueviolet;
+    border: 5px solid blueviolet;
+}
+input::placeholder{
+    color: red;
+}
+#miseccion{
+    height: 100px;
+    width: 100px;
+    background-color: lightblue;
+    margin:10px;
+    padding: 20px;
+    text-align: center;
+
+    animation-name: efecto;
+    animation-iteration-count: 3;
+    animation-timing-function: ease-in;
+    animation-duration: 6s;
+    animation-delay: 4s;
+}
+@keyframes efecto {
+    20%{
+        background-color: aquamarine;
+    }
+    40%{
+        background-color: darkcyan;
+    }
+    60%{
+        background-color: blue;
+    }
+    80%{
+        background-color: darkblue;
+    }
+    100%{
+        background-color: black;
+        width: 600px;
+    }
+}

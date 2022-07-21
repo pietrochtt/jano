@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: aqua;
+}
+
+section p{
+    color: hsl(268, 100%, 50%);
+}
+main p{
+    color: #ff0000;
+}
+.verdeOscuro {
+    color: darkgreen;
+    font-size: 2rem;
+/*1rem y 1em = 16px    esto se puede cambiar en el selector universal*/
+    text-align: justify;
+}
+.rosa{
+    color: rgb(247, 0, 255);
+    font-style: italic;
+}
+.azul{
+    color: blue;
+    font-weight: 1000;
+    text-align: center;
+    line-height: 40px;
+}
+#p1{
+    color: darkcyan;
+    font-weight: bold;
+    text-decoration: underline;
+} 
+main{
+    background-color: yellow;
+}
+div{
+    color: beige;
+    background-image: url(image/fondoEstrellado.jpg);
+    height: 200px;
+    width: 80%;
+    background-size: 100 100;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
